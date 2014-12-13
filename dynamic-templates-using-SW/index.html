@@ -1,0 +1,25 @@
+<html>
+
+<head>
+  <script type="text/javascript">
+
+  navigator.serviceWorker.register("/partials/serviceworker.js", { scope: "/partials/" }).then(
+    function(registration) {
+      console.log("Service worker installed succesfully!", registration);
+    },
+    function(err) {
+      console.error("Error while installing service worker: ", err);
+    });
+
+  </script>
+</head>
+
+<body>
+    <ul>
+        <li><a href="partials/page1.html">Page 1</a></li>
+        <li><a href="partials/page2.html">Page 2</a></li>
+        <li><a href="partials/page3.html">Page 3</a></li>
+    </ul>
+</body>
+
+</html>
