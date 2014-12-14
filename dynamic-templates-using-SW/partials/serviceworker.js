@@ -33,7 +33,7 @@ var templates = [
 function storeTemplate(template, body) {
   return new Promise(function(resolve, reject) {
     db.then(function(db) {
-      /* Create a new transation for storing a partials path and it's content */
+      /* Create a new transaction for storing a partials path and it's content */
       var store = db.transaction("templates", "readwrite").objectStore("templates");
 
       /* Add the actual partial */

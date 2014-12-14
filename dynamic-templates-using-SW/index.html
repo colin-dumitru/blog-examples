@@ -5,7 +5,7 @@
 
   navigator.serviceWorker.register("/partials/serviceworker.js", { scope: "/partials/" }).then(
     function(registration) {
-      console.log("Service worker installed succesfully!", registration);
+      console.log("Service worker installed successfully!", registration);
     },
     function(err) {
       console.error("Error while installing service worker: ", err);
